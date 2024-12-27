@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Buzzer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="selection-stage" class="stage">
+            <h1>Select Your Team</h1>
+            <button onclick="selectTeam('A')">Team A</button>
+            <button onclick="selectTeam('B')">Team B</button>
+            <button onclick="selectTeam('C')">Team C</button>
+            <button onclick="selectTeam('D')">Team D</button>
+        </div>
+        <div id="buzzer-stage" class="stage hidden">
+            <h1>Press the Buzzer!</h1>
+            <button id="buzzer-button" onclick="sendBuzz()">Buzz</button>
+        </div>
+        <div id="success-stage" class="stage hidden">
+            <h1 id="success-message">Success!</h1>
+            <button id="end-button" onclick="endBuzzing()" class="hidden">End</button>
+        </div>
+    </div>
+    <script src="page.js"></script>
+</body>
+</html>
