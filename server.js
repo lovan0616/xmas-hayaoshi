@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 // Connect to MongoDB Atlas
-mongoose.connect('your-mongodb-connection-string', {
+mongoose.connect('mongodb+srv://lovan0616:<db_password>@cluster0.tlrye.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
